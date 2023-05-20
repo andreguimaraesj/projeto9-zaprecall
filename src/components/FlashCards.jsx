@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import CardQuestion from "./CardQuestion"
+import CardQuestion from "./CardQuestion.jsx"
 import React from "react"
 
 export default function FlashCards(props) {

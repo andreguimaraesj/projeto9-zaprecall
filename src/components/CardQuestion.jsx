@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import React from "react"
-import CardAnswer from "./CardAnswer"
+import CardAnswer from "./CardAnswer.jsx"
 
 export default function CardQuestion(props) {
 

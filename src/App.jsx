@@ -1,25 +1,43 @@
-import Main from "./components/Main";
-import GlobalStyle from "./GlobalStyle";
-import React from "react";
-import FrontPage from "./components/FrontPage";
-import styled from "styled-components";
+import { useState } from "react";
+import { GlobalStyle } from "./components/styled/Global";
+import logo from "./assets/logo.png";
+import cards from "./Cards";
+import Icons from "./components/Data";
+import WelcomePage from "./components/WelcomePage";
+import RecallPage from "./components/RecallPage";
+import Footer from "./components/Footer";
 
 function App() {
-  const [clickStart, setClickStart] = React.useState(false)
+  const [begin, setBegin] = useState(false);
+  const [contAnswered, setAnswered] = useState(0);
+  const [iconAnswered, setIconAnswered] = useState([]);
 
   return (
     <>
       <GlobalStyle />
+      {begin === false && <WelcomePage logo={logo} setBegin={setBegin} />}
 
-    <FrontVisibility clickStart={clickStart}>
-        <FrontPage setClickStart={setClickStart} />
-    </FrontVisibility>
-
-      <MainVisibility clickStart={clickStart}>
-         <Main />
-      </MainVisibility>
+      {begin === true && (
+        <>
+          <RecallPage
+            logo={logo}
+            cards={cards}
+            Icons={Icons}
+            contAnswered={contAnswered}
+            setAnswered={setAnswered}
+            iconAnswered={iconAnswered}
+            setIconAnswered={setIconAnswered}
+          />
+          <Footer
+            contAnswered={contAnswered}
+            ncards={cards.length}
+            Icons={Icons}
+            iconAnswered={iconAnswered}
+          />
+        </>
+      )}
     </>
   );
-} 
+}
 
 export default App;
