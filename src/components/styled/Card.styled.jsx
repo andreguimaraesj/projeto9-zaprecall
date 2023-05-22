@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+
+
 export const CardSC = styled.div`
   width: clamp(300px, 60%, 80%);
   height: ${({ cardstate }) => (cardstate === "closed" ? "65px" : "150px")};
@@ -15,6 +17,7 @@ export const CardSC = styled.div`
     cardstate === "closed" ? "center" : "start"};
   position: relative;
 
+
   p {
     font-style: normal;
     font-weight: ${({ cardstate }) => (cardstate === "closed" ? "700" : "400")};
@@ -25,6 +28,9 @@ export const CardSC = styled.div`
       color !== "#333333" && "line-through"};
     color: ${({ color }) => color};
   }
+
+  
+
 img{
   padding: 0px 6px;
 }

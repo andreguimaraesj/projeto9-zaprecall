@@ -1,9 +1,14 @@
 import styled from "styled-components";
 
+
+
 export const RecallPageSC = styled.main`
   width: 100%;
   background-color: #fb6b6b;
   border: 1px solid #dbdbdb;
+
+
+
 
   span {
     padding: 45px 0px;
@@ -11,10 +16,17 @@ export const RecallPageSC = styled.main`
     justify-content: center;
     align-items: center;
     gap: 20px;
+
+
+
+
     img {
       width: 52px;
       height: 60px;
     }
+
+
+
     p {
       font-family: "Righteous", cursive;
       font-weight: 400;
@@ -37,6 +49,8 @@ export const RecallPageSC = styled.main`
     justify-content: center;
     align-items: center;
   }
+
+  
 
   div {
     margin: 20px 0px;

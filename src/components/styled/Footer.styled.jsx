@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+
+
 export const FooterSC = styled.footer`
   width: 100%;
   min-height: 70px;
@@ -19,9 +21,11 @@ export const FooterSC = styled.footer`
   line-height: 22px;
   color: #333333;
 
+
   div {
     display: flex;
   }
+
 
   section {
     display: flex;
@@ -30,6 +34,7 @@ export const FooterSC = styled.footer`
     align-items: center;
     gap: 20px;
 
+
     p {
       font-weight: 400;
       font-size: 18px;
@@ -37,12 +42,14 @@ export const FooterSC = styled.footer`
       color: #333333;
     }
 
+
     div {
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       
+
       p {
         font-weight: 700;
       }

@@ -1,4 +1,7 @@
 import { WelcomePageSC } from "./styled/WelcomePage.Styled";
+
+
+
 export default function WelcomePage({ logo, setBegin }) {
   return (
     <WelcomePageSC>

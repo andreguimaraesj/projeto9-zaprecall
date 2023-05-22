@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+
+
 export const AnswerButtonSC = styled.button`
   width: ${({ cardstate }) => (cardstate === "answered" ? "30%" : "")};
   height: 40px;
@@ -12,11 +14,12 @@ export const AnswerButtonSC = styled.button`
   line-height: 14px;
   color: #ffffff;
   cursor: pointer;
-
   border: none;
   background: none;
   background: ${({ bg }) => bg};
 
+
+  
   img{
     padding: 0px;
   }

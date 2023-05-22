@@ -1,6 +1,8 @@
 import { RecallPageSC } from "./styled/RecallPage.styled";
 import Card from "./Card";
 
+
+
 export default function RecallPage({
   logo,
   cards,

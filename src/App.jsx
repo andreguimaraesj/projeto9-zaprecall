@@ -7,10 +7,14 @@ import WelcomePage from "./components/WelcomePage";
 import RecallPage from "./components/RecallPage";
 import Footer from "./components/Footer";
 
+
+
 function App() {
   const [begin, setBegin] = useState(false);
   const [contAnswered, setAnswered] = useState(0);
   const [iconAnswered, setIconAnswered] = useState([]);
+
+
 
   return (
     <>
@@ -39,5 +43,7 @@ function App() {
     </>
   );
 }
+
+
 
 export default App;

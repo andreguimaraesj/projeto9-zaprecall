@@ -1,7 +1,11 @@
 import iconRight from "../assets/party.png";
 import iconWrong from "../assets/sad.png";
 
+
+
 import { FooterSC } from "./styled/Footer.styled";
+
+
 
 export default function Footer({ contAnswered, ncards, Icons, iconAnswered }) {
   return (
@@ -16,6 +20,8 @@ export default function Footer({ contAnswered, ncards, Icons, iconAnswered }) {
         </section>
       )}
 
+
+
       {contAnswered === ncards && iconAnswered.includes(2) && (
         <section data-test="finish-text">
           <div>
@@ -25,6 +31,8 @@ export default function Footer({ contAnswered, ncards, Icons, iconAnswered }) {
           <p>Ainda faltam alguns... Mas não desanime!</p>
         </section>
       )}
+
+
 
       <p>
         {contAnswered}/{ncards} CONCLUÍDOS

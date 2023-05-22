@@ -3,7 +3,11 @@ import { AnswerButtonSC } from "./styled/AnswerButton.styled";
 import arrow from "../assets/seta_play.png";
 import turn from "../assets/seta_virar.png";
 
+
+
 import { CardSC } from "./styled/Card.styled";
+
+
 
 export default function Card({
   card,
@@ -28,6 +32,8 @@ export default function Card({
     setColor(Icons[num].color);
   }
   
+
+
   return (
     <CardSC cardstate={cardState} color={color} data-test="flashcard">
       {cardState === "closed" && (
@@ -56,6 +62,7 @@ export default function Card({
         </>
       )}
 
+
       {cardState === "turned" && (
         <>
           <p data-test="flashcard-text">{card.question}</p>
@@ -70,6 +77,7 @@ export default function Card({
           </AnswerButtonSC>
         </>
       )}
+
 
       {cardState === "answered" && (
         <>
@@ -86,6 +94,8 @@ export default function Card({
               Não lembrei
             </AnswerButtonSC>
 
+
+
             <AnswerButtonSC
               cardstate={cardState}
               bg={Icons[1].color}
@@ -96,6 +106,8 @@ export default function Card({
             >
               Quase não lembrei
             </AnswerButtonSC>
+
+
 
             <AnswerButtonSC
               const
